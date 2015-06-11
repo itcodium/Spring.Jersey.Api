@@ -1,0 +1,110 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.javahash.web</groupId>
+  <artifactId>Spring-Jersey-Resources</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Spring-Jersey-Resources Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+ 
+ <properties>
+    <spring.version>4.0.1.RELEASE</spring.version>
+ </properties>
+	 
+	 
+	
+  <dependencies>
+
+    <dependency>
+     <groupId>junit</groupId>
+     <artifactId>junit</artifactId>
+     <version>4.12</version>
+     <scope>test</scope>
+    </dependency>
+ 
+ 
+ 
+ 
+   <!-- Spring dependencies -->
+   <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>${spring.version}</version>
+  </dependency>
+ 
+ <dependency>
+   <groupId>org.springframework</groupId>
+   <artifactId>spring-web</artifactId>
+   <version>${spring.version}</version>
+ </dependency>
+ 
+ <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>${spring.version}</version>
+ </dependency>
+ <dependency>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-jdbc</artifactId>
+	<version>${spring.version}</version>
+</dependency>
+ 
+    <dependency>
+     <groupId>junit</groupId>
+     <artifactId>junit</artifactId>
+     <version>4.12</version>
+     <scope>test</scope>
+    </dependency>
+ <dependency>  
+        <groupId>cglib</groupId>  
+        <artifactId>cglib</artifactId>  
+        <version>2.2.2</version>  
+    </dependency>  
+    <!-- Servlet API, JSTL -->  
+    <dependency>  
+        <groupId>javax.servlet</groupId>  
+        <artifactId>javax.servlet-api</artifactId>  
+        <version>3.0.1</version>  
+        <scope>provided</scope>  
+    </dependency>  
+    <dependency>  
+        <groupId>jstl</groupId>  
+        <artifactId>jstl</artifactId>  
+        <version>1.2</version>  
+    </dependency>
+    <dependency>
+		 <groupId>org.glassfish.jersey.containers</groupId>
+		 <!-- if your container implements Servlet API older than 3.0, use "jersey-container-servlet-core" -->
+		 <artifactId>jersey-container-servlet</artifactId>
+		 <version>2.5.1</version>
+	 </dependency>
+	 <!-- Required only when you are using JAX-RS Client -->
+	 <dependency>
+		 <groupId>org.glassfish.jersey.core</groupId>
+		 <artifactId>jersey-client</artifactId>
+		 <version>2.5.1</version>
+	 </dependency>
+	 <dependency>
+		 <groupId>com.fasterxml.jackson.jaxrs</groupId>
+		 <artifactId>jackson-jaxrs-json-provider</artifactId>
+		 <version>2.2.3</version>
+	 </dependency>
+	 <dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.18</version>
+	 </dependency>
+	 <dependency>
+	    <groupId>org.mongodb</groupId>
+	    <artifactId>mongo-java-driver</artifactId>
+	    <version>2.12.3</version>
+	 </dependency>
+ </dependencies>
+  
+  
+
+  <build>
+    <finalName>Spring-Jersey-Resources</finalName>
+  </build>
+</project>
